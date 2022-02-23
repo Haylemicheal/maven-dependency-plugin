@@ -370,14 +370,14 @@ public abstract class AbstractAnalyzeMojo
             warning = true;
         }
 
-        if ( !testArtifactsWithNonTestScope.isEmpty() )
-        {
-            getLog().warn( "Non-test scoped test only dependencies found:" );
+        // if ( !testArtifactsWithNonTestScope.isEmpty() )
+        // {
+        //     getLog().warn( "Non-test scoped test only dependencies found:" );
 
-            logArtifacts( testArtifactsWithNonTestScope, true );
-            reported = true;
-            warning = true;
-        }
+        //     logArtifacts( testArtifactsWithNonTestScope, true );
+        //     reported = true;
+        //     warning = true;
+        // }
 
         if ( verbose && !ignoredUsedUndeclared.isEmpty() )
         {
